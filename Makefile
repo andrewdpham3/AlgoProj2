@@ -7,7 +7,7 @@ else
 	CXX_COMMAND := g++
 endif
 
-CXX = ${CXX_COMMAND} -std=c++14 -Wall
+CXX = ${CXX_COMMAND} -std=c++11 -Wall
 
 all: subsequence_timing run_test
 
