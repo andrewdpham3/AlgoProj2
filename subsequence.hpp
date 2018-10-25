@@ -53,14 +53,13 @@ sequence random_sequence(size_t size, unsigned seed, int max_element) {
 }
 
 bool is_increasing(const sequence& A) {
-  for (size_t i = 1; i < A.size(); ++i) {
+  for (size_t i = 1; i < A.size(); ++i)
       // TODO
       // write the test to check if A[i-1] and A[i] are
       // in increasing order
       // if not, you need to write what needs to be done
     if (A[i-1]>A[i])
       return false;
-  }
   return true;
 }
 
@@ -80,6 +79,8 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
         // write the statements that compute the value of
         // H[i] based on conditions that involve A[i], A[j]
         // and H[j]
+      if(A[j]>A[i] && A[j]>H[i])
+        H[i]=1+H[i]
     }
   }
 
@@ -134,7 +135,6 @@ sequence longest_increasing_powerset(const sequence& A) {
       // an increasing sequence AND has a size larger than the size
       // of the current best
       // if both conditions are satisfied, then stored candidate in best
-
     }
 
   return best;
