@@ -58,7 +58,7 @@ bool is_increasing(const sequence& A) {
       // write the test to check if A[i-1] and A[i] are
       // in increasing order
       // if not, you need to write what needs to be done
-    if (A[i-1]<A[i])
+    if (A[i-1]>A[i])
       return false;
   return true;
 }
