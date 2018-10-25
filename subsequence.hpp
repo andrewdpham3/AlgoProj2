@@ -102,6 +102,8 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
           // write the statements to add A[i] to the sequene R by
           // storing it into R[j], decrement index and increment j
         R[j]+=A[i];
+        index--;
+        j++;
       }
     }
 
