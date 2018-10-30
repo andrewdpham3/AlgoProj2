@@ -138,6 +138,13 @@ sequence longest_increasing_powerset(const sequence& A) {
       // an increasing sequence AND has a size larger than the size
       // of the current best
       // if both conditions are satisfied, then stored candidate in best
+    bool isincreasing=true;
+    for(int i=0;i<k-1;i++)
+      if(candidate[i]>candidate[i+1])
+        isincreasing=false;
+    if(isincreasing)
+      if(k>best.size())
+        best=candidate;
     }
 
   return best;
