@@ -76,9 +76,9 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
     for (size_t j = i+1; j < n ; j++) {
         // TODO
         // write the statements that compute the value of
-        // H[i] based on conditions that involve A[i], A[j]
+        // H[i] based on conditions that involve A[i], A[j]x
         // and H[j]
-      if(A[j]>A[i] && A[j]>H[i])
+      if(H[j]>A[i] && H[j]>H[i])
         H[i]=A[i]+1;
     }
   }
@@ -138,9 +138,8 @@ sequence longest_increasing_powerset(const sequence& A) {
     for(int i=0;i<k-1;i++)
       if(candidate[i]>candidate[i+1])
         isincreasing=false;
-    if(isincreasing)
-      if(k>best.size())
-        best=candidate;
+    if(isincreasing && k>best.size())
+      best=candidate;
     }
   return best;
 }
