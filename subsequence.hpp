@@ -79,7 +79,7 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
         // H[i] based on conditions that involve A[i], A[j]x
         // and H[j]
       if(A[j]>A[i] && A[j]>H[i])
-        H[i+1]=j;
+        H[i]=A[j];
     }
   }
 
