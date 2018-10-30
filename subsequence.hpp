@@ -54,10 +54,9 @@ sequence random_sequence(size_t size, unsigned seed, int max_element) {
 
 bool is_increasing(const sequence& A) {
   for (size_t i = 1; i < A.size(); ++i)
-      // TODO
-      // write the test to check if A[i-1] and A[i] are
+      // check if A[i-1] and A[i] are
       // in increasing order
-      // if not, you need to write what needs to be done
+      // if not, returns false
     if (A[i-1]>A[i])
       return false;
   return true;
@@ -133,10 +132,7 @@ sequence longest_increasing_powerset(const sequence& A) {
     for (size_t i = 1; i <= k; ++i) {
       candidate.push_back(A[stack[i]-1]);
     }
-   // TODO
-      // write the if statement to test whether candidate determines
-      // an increasing sequence AND has a size larger than the size
-      // of the current best
+      // dermines an increasing sequence AND has a size larger than the size of the current best
       // if both conditions are satisfied, then stored candidate in best
     bool isincreasing=true;
     for(int i=0;i<k-1;i++)
@@ -146,6 +142,5 @@ sequence longest_increasing_powerset(const sequence& A) {
       if(k>best.size())
         best=candidate;
     }
-
   return best;
 }
