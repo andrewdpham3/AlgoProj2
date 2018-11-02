@@ -19,8 +19,5 @@ headers: rubrictest.hpp subsequence.hpp timer.hpp
 subsequence_timing: headers subsequence_timing.cpp
 	${CXX} subsequence_timing.cpp -o subsequence_timing
 
-subsequence_test: headers subsequence_test.cpp
-	${CXX} subsequence_test.cpp -o subsequence_test
-
 clean:
 	rm -f subsequence_test subsequence_timing
