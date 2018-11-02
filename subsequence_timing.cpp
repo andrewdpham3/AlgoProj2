@@ -31,10 +31,6 @@ int main() {
 }
 
 void multitest(size_t n){
-  size_t n = 10;
-
-  assert(n > 0);
-
   // Use a hardcoded seed for reproducibility between runs.
   auto input = random_sequence(n, 0, 1000);
 
