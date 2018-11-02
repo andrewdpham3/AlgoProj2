@@ -72,14 +72,14 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
   // calculate the values of array H
   // note that i has to be declared signed, to avoid an infinite loop, since
   // the loop condition is i >= 0
-  for (signed int i = n-2;  i>= 0; i--) {
-    for (size_t j = i+1; j < n ; j++) {
+  for (signed int i = n-2;  i>= 0; i--) { //from the end of a to the beginning
+    for (size_t j = i+1; j < n ; j++) { //from i to the end
         // TODO
         // write the statements that compute the value of
         // H[i] based on conditions that involve A[i], A[j]x
         // and H[j]
-      if(A[j]>A[i] && A[j]>H[i])
-        H[i]=A[j]+1;
+      if(A[j]>A[i] && H[j]>H[i])
+        H[i]=H[j]+1;
     }
   }
 
