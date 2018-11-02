@@ -54,10 +54,10 @@ void multitest(size_t n){
 }
 
 int main() {
-  multitest(6);
-  multitest(12);
-  multitest(18);
-  multitest(24);
-  multitest(30);
+  multitest(5);
+  multitest(10);
+  multitest(15);
+  multitest(20);
+  multitest(25);
   return 0;
 }
