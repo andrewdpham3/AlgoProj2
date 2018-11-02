@@ -13,6 +13,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <iostream>
 
 using sequence = std::vector<int>;
 
