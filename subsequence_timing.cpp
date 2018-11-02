@@ -21,15 +21,6 @@
 void print_bar() {
   std::cout << std::string(79, '-') << std::endl;
 }
-
-int main() {
-  multitest(10);
-  multitest(20);
-  multitest(30);
-  multitest(40);
-  multitest(50);
-}
-
 void multitest(size_t n){
   // Use a hardcoded seed for reproducibility between runs.
   auto input = random_sequence(n, 0, 1000);
@@ -62,4 +53,12 @@ void multitest(size_t n){
   print_bar();
   
   return 0;
+}
+
+int main() {
+  multitest(10);
+  multitest(20);
+  multitest(30);
+  multitest(40);
+  multitest(50);
 }
