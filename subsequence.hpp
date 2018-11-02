@@ -80,11 +80,12 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
         // write the statements that compute the value of
         // H[i] based on conditions that involve A[i], A[j]x
         // and H[j]
-      if(A[j]>A[i] && H[j]>H[i])
+      if(A[j]>A[i] && H[j]>=H[i])
         H[i]=H[j]+1;
     }
   }
   
+  cout<<"\n";
   for(int i=0;i<n-1;i++)
     cout<<A[i]<<",";
   cout<<"\n";
