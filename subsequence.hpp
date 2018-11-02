@@ -85,13 +85,6 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
     }
   }
   
-  cout<<"\n";
-  for(int i=0;i<n-1;i++)
-    cout<<A[i]<<",";
-  cout<<"\n";
-  for(int i=0;i<n-1;i++)
-    cout<<H[i]<<",";
-  
   // calculate in max the length of the longest subsequence
     // by adding 1 to the maximum value in H
   auto max = *std::max_element(H.begin(), H.end()) + 1;
