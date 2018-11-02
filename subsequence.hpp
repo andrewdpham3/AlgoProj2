@@ -15,6 +15,7 @@
 #include <vector>
 #include <iostream>
 
+using namespace std;
 using sequence = std::vector<int>;
 
 // Convert a sequence into a human-readable string useful for pretty-printing
@@ -104,7 +105,6 @@ sequence longest_increasing_end_to_beginning(const sequence& A) {
     size_t index = max-1, j = 0;
     for (size_t i = 0; i < n; ++i) {
       if (H[i] == index) {
-          // TODO
           // write the statements to add A[i] to the sequene R by
           // storing it into R[j], decrement index and increment j
         R[j]=A[i];
