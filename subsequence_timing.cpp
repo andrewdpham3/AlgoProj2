@@ -51,8 +51,6 @@ void multitest(size_t n){
   std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
 
   print_bar();
-  
-  return 0;
 }
 
 int main() {
@@ -61,4 +59,5 @@ int main() {
   multitest(30);
   multitest(40);
   multitest(50);
+  return 0;
 }
