@@ -11,8 +11,8 @@ CXX = ${CXX_COMMAND} -std=c++11 -Wall
 
 all: subsequence_timing run_test
 
-run_test: subsequence_test
-	./subsequence_test
+run_test: subsequence_timing
+	./subsequence_timing
 
 headers: rubrictest.hpp subsequence.hpp timer.hpp
 
