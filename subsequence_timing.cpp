@@ -24,7 +24,143 @@ void print_bar() {
 
 int main() {
 
-  const size_t n = 20;
+  size_t n = 10;
+
+  assert(n > 0);
+
+  // Use a hardcoded seed for reproducibility between runs.
+  auto input = random_sequence(n, 0, 1000);
+
+  Timer timer;
+  double elapsed;
+
+  print_bar();
+  std::cout << "n = " << n << std::endl
+            << sequence_to_string(input) << std::endl;
+
+  print_bar();
+  std::cout << "end to beginning" << std::endl;
+  timer.reset();
+  auto etb_output = longest_increasing_end_to_beginning(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(etb_output) << std::endl
+            << "of length = " << etb_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  std::cout << "powerset" << std::endl;
+  timer.reset();
+  auto powerset_output = longest_increasing_powerset(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(powerset_output) << std::endl
+            << "of length = " << powerset_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  
+  size_t n = 20;
+
+  assert(n > 0);
+
+  // Use a hardcoded seed for reproducibility between runs.
+  auto input = random_sequence(n, 0, 1000);
+
+  Timer timer;
+  double elapsed;
+
+  print_bar();
+  std::cout << "n = " << n << std::endl
+            << sequence_to_string(input) << std::endl;
+
+  print_bar();
+  std::cout << "end to beginning" << std::endl;
+  timer.reset();
+  auto etb_output = longest_increasing_end_to_beginning(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(etb_output) << std::endl
+            << "of length = " << etb_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  std::cout << "powerset" << std::endl;
+  timer.reset();
+  auto powerset_output = longest_increasing_powerset(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(powerset_output) << std::endl
+            << "of length = " << powerset_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  
+  size_t n = 30;
+
+  assert(n > 0);
+
+  // Use a hardcoded seed for reproducibility between runs.
+  auto input = random_sequence(n, 0, 1000);
+
+  Timer timer;
+  double elapsed;
+
+  print_bar();
+  std::cout << "n = " << n << std::endl
+            << sequence_to_string(input) << std::endl;
+
+  print_bar();
+  std::cout << "end to beginning" << std::endl;
+  timer.reset();
+  auto etb_output = longest_increasing_end_to_beginning(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(etb_output) << std::endl
+            << "of length = " << etb_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  std::cout << "powerset" << std::endl;
+  timer.reset();
+  auto powerset_output = longest_increasing_powerset(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(powerset_output) << std::endl
+            << "of length = " << powerset_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  
+  size_t n = 40;
+
+  assert(n > 0);
+
+  // Use a hardcoded seed for reproducibility between runs.
+  auto input = random_sequence(n, 0, 1000);
+
+  Timer timer;
+  double elapsed;
+
+  print_bar();
+  std::cout << "n = " << n << std::endl
+            << sequence_to_string(input) << std::endl;
+
+  print_bar();
+  std::cout << "end to beginning" << std::endl;
+  timer.reset();
+  auto etb_output = longest_increasing_end_to_beginning(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(etb_output) << std::endl
+            << "of length = " << etb_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  std::cout << "powerset" << std::endl;
+  timer.reset();
+  auto powerset_output = longest_increasing_powerset(input);
+  elapsed = timer.elapsed();
+  std::cout << "output = " << sequence_to_string(powerset_output) << std::endl
+            << "of length = " << powerset_output.size() << std::endl;
+  std::cout << "elapsed time=" << elapsed << " seconds" << std::endl;
+
+  print_bar();
+  
+  size_t n = 50;
 
   assert(n > 0);
 
